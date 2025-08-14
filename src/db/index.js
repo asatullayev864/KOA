@@ -9,4 +9,6 @@ db.on('error', (err) => {
     process.exit(1);
 });
 
+db.on('connect', () => console.log('Database connected'));
+
 export default db;
